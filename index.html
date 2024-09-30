@@ -37,7 +37,7 @@
         <div class="logo">
           <img src="./assets/img/logo-boy.svg" alt="logo" class="logo-img" />
         </div>
-        <ul class="navbar">
+        <ul class="navbar" id="navbar-pc">
           <li>
             <a href="#project" class="navbar__item">Projects</a>
           </li>
@@ -52,6 +52,59 @@
           </li>
         </ul>
       </section>
+    </header>
+
+    <!-- header mobile,tablet -->
+    <header class="mobile-header">
+        <img src="./assets/img/logo-boy.svg" alt="logo" class="logo" />
+        <div class="nav__mail">
+          <div class="nav__mail-icon">
+            <img
+            class="nav__mail-img"
+            src="./assets/img/mail-icon.png"
+            alt="mail icon"
+          />
+          </div>
+          <a
+            href="mailto:nguyenvancuong0345723186@gmail.com"
+            class="nav__mail-desc"
+          >
+            hi@arif.interactive
+          </a>
+        </div>
+        <!-- menu toogle -->
+        <label for="menu" class="toogle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 34 34" fill="none">
+            <circle opacity="0.2" cx="17" cy="17" r="16" stroke="#5D3BEE"/>
+            <path d="M10 20H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 14H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </label>
+        <input type="checkbox" name="menu" id="menu" class="menu-checkbox" hidden checked>
+        <div class="menu-content">
+           <!-- overlay -->
+         <label class="menu-overlay" for="menu">
+          </label>
+          <!-- menu-content -->
+         <div class="menu-drawer">
+          <!-- logo navbar -->
+          <img src="./assets/img/logo-boy.svg" alt="logo" class="menu-drawer__logo" />
+          <!-- nav mobile -->
+          <ul id="navbar-mobile" class="navbar-mobile">
+          </ul>
+          <div class="menu-drawer__horizontal"></div>
+          <!-- login -->
+          <div class="login">
+            <a href="#!" class="signin">Sign in</a>
+            <a href="#!" class="signup">Sign up</a>
+          </div>
+          <script>
+              const navPc = document.querySelector("#navbar-pc");
+              const navMobile = document.querySelector("#navbar-mobile");
+              navMobile.innerHTML = navPc.innerHTML;
+          </script>
+         </div>
+        </div>
     </header>
     <!-- main -->
     <main class="main">
