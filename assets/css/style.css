@@ -781,6 +781,12 @@ label::after {
   margin-top: 18px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__rightblock{
+  display: flex;
+  align-items: center;
 }
 
 .copyright__desc {

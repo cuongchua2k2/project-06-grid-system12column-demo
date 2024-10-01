@@ -74,13 +74,13 @@
         </div>
         <!-- menu toogle -->
         <label for="menu" class="toogle-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 34 34" fill="none">
+          <svg class="toogle-menu__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 34 34" fill="none">
             <circle opacity="0.2" cx="17" cy="17" r="16" stroke="#5D3BEE"/>
             <path d="M10 20H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10 14H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </label>
-        <input type="checkbox" name="menu" id="menu" class="menu-checkbox" hidden checked>
+        <input type="checkbox" name="menu" id="menu" class="menu-checkbox" hidden >
         <div class="menu-content">
            <!-- overlay -->
          <label class="menu-overlay" for="menu">
@@ -300,6 +300,12 @@
               </div>
             </div>
           </div>
+          <!-- dots mobile -->
+          <div class="skill__dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </section>
       <!-- Projects -->
@@ -307,7 +313,7 @@
         <div class="container">
           <!-- row 1 -->
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <div class="project__top">
                 <div class="project__title title-common">
                   Take a look at my&nbsp;recent projects
@@ -322,7 +328,7 @@
           <!-- row 2 -->
           <div class="row project__list row-cols-lg-2 row-cols-md-1">
             <!-- item 1 -->
-            <div class="col">
+            <div class="col col-lg-6 col-12">
               <div class="project__item">
                 <div class="project__info">
                   <h3 class="project__info-title">Wally Website</h3>
@@ -339,7 +345,7 @@
               </div>
             </div>
             <!-- item 2 -->
-            <div class="col">
+            <div class="col col-lg-6 col-12">
               <div class="project__item">
                 <div class="project__info">
                   <h3 class="project__info-title">Banking App</h3>
@@ -356,7 +362,7 @@
               </div>
             </div>
             <!-- item 3 -->
-            <div class="col">
+            <div class="col col-lg-6 col-12">
               <div class="project__item">
                 <div class="project__info">
                   <h3 class="project__info-title">Web App</h3>
@@ -373,7 +379,7 @@
               </div>
             </div>
             <!-- item 4 -->
-            <div class="col">
+            <div class="col col-lg-6 col-12">
               <div class="project__item">
                 <div class="project__info">
                   <h3 class="project__info-title">Oculus Website</h3>
@@ -405,7 +411,7 @@
         <div class="container">
           <!-- journey-top -->
           <div class="row journey__top">
-            <div class="col-lg-6 offset-lg-3">
+            <div class="col-lg-6 offset-lg-3 col-12">
               <div class="journey__top-content">
                 <div class="journey__greeting">
                   <p class="journey__greeting-desc">Hey,,,,It’s Arif</p>
@@ -426,8 +432,8 @@
             </div>
           </div>
           <!-- journey  achive -->
-          <div class="row">
-            <div class="col-lg-10 offset-lg-1">
+          <div class="achive row">
+            <div class="col-lg-10 offset-lg-1 col-12">
               <div class="journey__achive">
                 <!-- item 1 -->
                 <div class="journey__achive-item">
@@ -464,14 +470,14 @@
                   controls
                   id="video"
                 ></video>
-                <label class="journey__video-cta"></label>
+                <label for="video" class="journey__video-cta"></label>
                 <div class="journey__video-desc btn">Intro Video</div>
               </div>
             </div>
           </div>
           <!-- journey-top 2-->
           <div class="row journey__bottom">
-            <div class="col-lg-6 offset-lg-3">
+            <div class="col-lg-6 offset-lg-3 col-12">
               <div class="journey__bottom-content">
                 <h2 class="title-common journey__title">What people says</h2>
                 <p class="desc-common journey__desc">
@@ -483,7 +489,7 @@
           </div>
           <!-- journey feedback -->
           <div class="row journey__feedback">
-            <div class="col-lg-8 offset-lg-2">
+            <div class="col-lg-8 offset-lg-2 col-12">
               <div class="journey__feedback-content">
                 <p class="journey__feedback-info">
                   “Duis aute irure dolor in reprehenderit in voluptate velit
@@ -515,12 +521,10 @@
       <section class="question">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <div class="question__top">
+            <div class="col-12 question__top">
                 <h2 class="question__title title-common">
                   A few questions clients&nbsp;normally ask me
                 </h2>
-              </div>
             </div>
           </div>
           <div class="row question__body">
@@ -672,6 +676,13 @@
               />
             </div>
           </div>
+          <div class="gallery__dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </section>
       <!-- contact -->
@@ -696,7 +707,7 @@
     <!-- footer -->
     <footer class="footer">
       <section class="nav footer__nav">
-        <div class="nav__mail">
+        <div class="nav__mail footer__mail"> 
           <div class="nav__mail-icon">
             <img
               class="nav__mail-img"
@@ -706,15 +717,15 @@
           </div>
           <a
             href="mailto:nguyenvancuong0345723186@gmail.com"
-            class="nav__mail-desc"
+            class="nav__mail-desc footer__mail-desc"
           >
             hi@arif.interactive
           </a>
         </div>
-        <div class="logo">
+        <div class="logo footer__logo">
           <img src="./assets/img/logo-boy.svg" alt="logo" class="logo-img" />
         </div>
-        <ul class="navbar">
+        <ul class="navbar footer__navbar">
           <li>
             <a href="#project" class="navbar__item">Projects</a>
           </li>
@@ -728,6 +739,7 @@
             <a href="#!" class="navbar__item">Contact</a>
           </li>
         </ul>
+        
       </section>
       <section class="footer__copyright">
         <div class="footer__horizontal"></div>
@@ -735,9 +747,12 @@
           <p class="copyright__desc copyright__content">
             ©interactiveArif 2021. All rights reserved.
           </p>
-          <p class="copyright__desc privacy">Privacy Policy</p>
-          <div class="footer__vertical"></div>
-          <p class="copyright__desc terms">Terms of Conditions</p>
+          <div class="horizontal-mobile"></div>
+          <div class="copyright__rightblock">
+            <p class="copyright__desc privacy">Privacy Policy</p>
+            <div class="footer__vertical"></div>
+            <p class="copyright__desc terms">Terms of Conditions</p>
+          </div>
         </div>
       </section>
     </footer>
