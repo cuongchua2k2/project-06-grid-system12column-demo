@@ -4,6 +4,14 @@
   .mobile-header{
     display: none;
   }
+
+  .skill__dots{
+        display: none;
+      }
+
+      .gallery__dots{
+      display: none;
+      }
 }
 
 /* PC max width 1200 */
@@ -32,10 +40,6 @@
 
       .footer__horizontal,.copyright__group,.nav,.contact-content{
         width: 1170px;
-      }
-
-      .skill__dots{
-        display: none;
       }
 
 }
@@ -171,6 +175,8 @@
     display: flex;
     flex-direction: column-reverse;
    }
+
+   
 
   
   
