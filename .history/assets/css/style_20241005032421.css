@@ -695,7 +695,7 @@ label::after {
 }
 
 .question__view:checked ~ label {
-  border: none;
+  color: transparent;
 }
 
 .question__view:checked [class*="question__group"] {

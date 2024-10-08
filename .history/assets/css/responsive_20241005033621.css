@@ -49,143 +49,6 @@
 
 @media screen and (max-width: 991.98px) {
   /*======== header===== */
-
-  .nav {
-    display: none;
-  }
-
-  .header {
-    padding-top: 0;
-  }
-
-  .mobile-header {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    margin-left: 0;
-    margin-right: auto;
-    width: 80px;
-    height: 80px;
-  }
-
-  .nav__mail-icon {
-    height: 50px;
-    width: 50px;
-  }
-
-  .nav__mail-desc {
-    display: none;
-  }
-
-  .toogle-menu {
-    height: 50px;
-    width: 50px;
-    margin: 0 0 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-  }
-
-  .menu-content {
-    position: absolute;
-    visibility: hidden;
-    display: flex;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 999;
-    transition: all ease 0.2s;
-    /* background-color: red; */
-  }
-
-  .menu-drawer {
-    position: fixed;
-    padding: 10px 20px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 35%;
-    translate: 100%;
-    background-color: #ccc;
-    transition: all ease 0.2s;
-  }
-
-  .hero__right {
-    margin: 0;
-    width: 100%;
-    padding-left: 20px;
-  }
-
-  .menu-overlay {
-    position: fixed;
-    inset: 0;
-    transition: all ease 0.2s;
-    visibility: hidden;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    background-color: #000;
-    border: 0;
-    border-radius: 0;
-    margin-top: 0;
-  }
-
-  .menu-checkbox:checked ~ .menu-content .menu-drawer {
-    translate: 0 0;
-  }
-
-  .menu-checkbox:checked ~ .menu-content,
-  .menu-checkbox:checked ~ .menu-content .menu-overlay {
-    visibility: visible;
-  }
-
-  .navbar-mobile {
-    margin: 20px 0;
-  }
-
-  .navbar-mobile li {
-    margin-top: 20px;
-  }
-
-  .menu-drawer__logo {
-    margin-top: 10px;
-    height: 70px;
-    width: 70px;
-  }
-
-  .menu-drawer__horizontal {
-    height: 1px;
-    width: 90%;
-    background-color: #000;
-  }
-
-  .login {
-    margin: 20px 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* ======= hero======== */
-
-  .hero > .container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .group-rectangle__right,
-  .partner__right {
-    display: none;
-  }
-}
-
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 991.98) {
   .btn {
     font-size: 1.6rem;
     min-width: 147px;
@@ -528,6 +391,142 @@
     background-color: #0c0720;
     opacity: 0.2;
   }
+  .nav {
+    display: none;
+  }
+
+  .header {
+    padding-top: 0;
+  }
+
+  .mobile-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav__mail-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav__mail-desc {
+    display: none;
+  }
+
+  .toogle-menu {
+    height: 50px;
+    width: 50px;
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .menu-content {
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    transition: all ease 0.2s;
+    /* background-color: red; */
+  }
+
+  .menu-drawer {
+    position: fixed;
+    padding: 10px 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 35%;
+    translate: 100%;
+    background-color: #ccc;
+    transition: all ease 0.2s;
+  }
+
+  .hero__right {
+    margin: 0;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    transition: all ease 0.2s;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #000;
+    border: 0;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .menu-checkbox:checked ~ .menu-content .menu-drawer {
+    translate: 0 0;
+  }
+
+  .menu-checkbox:checked ~ .menu-content,
+  .menu-checkbox:checked ~ .menu-content .menu-overlay {
+    visibility: visible;
+  }
+
+  .navbar-mobile {
+    margin: 20px 0;
+  }
+
+  .navbar-mobile li {
+    margin-top: 20px;
+  }
+
+  .menu-drawer__logo {
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .menu-drawer__horizontal {
+    height: 1px;
+    width: 90%;
+    background-color: #000;
+  }
+
+  .login {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ======= hero======== */
+
+  .hero > .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .group-rectangle__right,
+  .partner__right {
+    display: none;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991.98) {
 }
 
 /* mobile  */
